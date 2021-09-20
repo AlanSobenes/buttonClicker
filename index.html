@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojonary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navBar">
+        <h1>Dojonary</h1>
+        <input type="search" value="Search">
+        <button onclick="changeText(this)">Login</button>
+    </div>
+    <div class="columns">
+        <div id="left">
+            <div class="defbox">
+                <div class="noun">
+                    <h1 class="bold">ninja</h1>
+                    <h2 class="italic">noun</h2>
+                    <p>Plural: ninjas</p>
+                    <button class="likebutton" onclick="alert('Ninja was liked')">13 likes</button>
+                </div>
+                <div class="definition">
+                    <p>A practitioner skilled in the <span><a href="https://en.wikipedia.org/wiki/Japanese_Wikipedia">Japanese</a></span> art of <span><a href="https://en.wikipedia.org/wiki/Ninjutsu">ninjutsu</a></span></p>
+                </div>
+            </div>    
+            <div class="defbox" id="secdef">
+                <div class="noun">
+                    <h1 class="bold">ninja</h1>
+                    <h2 class="italic">noun</h2>
+                    <p>Plural: ninjas</p>
+                    <button class="likebutton" onclick="alert('Ninja was liked')">37 likes</button>
+                </div>
+                <div class="definition" >
+                    <p>A <span><a href="https://en.wikipedia.org/wiki/Programmer">programmer</a></span> who breaks down problems with <span><a href="https://en.wikipedia.org/wiki/Zen">zen</a></span>-like focus</p>
+                </div>
+            </div>
+        </div>
+        <div id="right">
+            <div id="adddef">
+                <h2>Dojonary is</h2>
+                <h2> defined by <span class="bold">YOU</span></h2>
+                <button id="adddefbutton" onclick="removeBtn(this)">Add Definition</button>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>  
+</body>
+
+</html>
